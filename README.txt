@@ -1,14 +1,28 @@
-LAU DENTAL - VERSIÓN AJUSTADA
+LAU DENTAL - SITIO WEB
+======================
 
-Cambios incluidos:
-- Encabezado alineado y responsive.
-- Formulario emergente de Agendar cita.
-- Envío del formulario a joseantonio_lau@hotmail.com mediante FormSubmit.
-- Resultados con únicamente Antes y Después.
-- 30 años de experiencia.
+Sitio estático listo para Cloudflare Pages.
 
-IMPORTANTE SOBRE EL FORMULARIO:
-La primera solicitud enviada mediante FormSubmit genera un correo de activación a joseantonio_lau@hotmail.com. Debe abrirse ese correo y confirmar la dirección una sola vez. Después, las solicitudes llegarán directamente. Revisar también la carpeta de correo no deseado.
+IMPORTANTE ANTES DE PUBLICAR
+----------------------------
+Editar el archivo js/config.js con:
+- Teléfono real
+- Número real de WhatsApp en formato internacional, sin + ni espacios
+- Dirección completa
+- Horario
+- Enlace real de Google Maps
 
-PUBLICACIÓN:
-Sube el contenido de esta carpeta a la raíz del repositorio laudental y confirma los cambios. Cloudflare Pages publicará la actualización automáticamente.
+También revisar:
+- Correo de contacto en index.html y aviso-de-privacidad.html
+- Aviso de privacidad con domicilio fiscal y responsable legal
+- Fotografías reales de la clínica y doctores, si se desea sustituir las ilustraciones
+
+PUBLICAR EN CLOUDFLARE PAGES
+----------------------------
+1. Descomprimir el archivo.
+2. Entrar a Cloudflare Dashboard > Workers & Pages.
+3. Crear una aplicación > Pages > Subir recursos.
+4. Subir la carpeta completa o el ZIP.
+5. Configurar laudental.co como dominio personalizado.
+
+No requiere compilación ni dependencias.

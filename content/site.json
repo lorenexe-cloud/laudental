@@ -1,1 +1,90 @@
-{"contact":{"phoneDisplay":"(612) 122 7895","phoneInternational":"+526121227895","whatsappDisplay":"+52 612 176 8359","whatsapp":"526121768359","address":"Madero 685 norte, altos, Colonia Centro, C.P. 23000, La Paz, B.C.S.","mapUrl":"https://maps.app.goo.gl/6TARzaB3BJEB4c5G7","facebook":"https://www.facebook.com/profile.php?id=100059037774252"},"hours":{"weekdays":"Lunes a viernes: 8:00 a.m. a 2:00 p.m. y 4:00 p.m. a 8:00 p.m.","saturday":"Sábado: 8:00 a.m. a 2:00 p.m."}}
+{
+  "site": {
+    "title": "Lau Dental | Rehabilitación bucal y ortodoncia",
+    "description": "Clínica dental familiar en La Paz, B.C.S., con más de 25 años de experiencia en rehabilitación bucal, prótesis, implantes y ortodoncia.",
+    "logo": "/img/logo-laudental.webp",
+    "email": "contacto@laudental.co"
+  },
+  "hero": {
+    "eyebrow": "Clínica dental familiar",
+    "title": "Más de 25 años cuidando sonrisas en La Paz",
+    "text": "Rehabilitación bucal, ortodoncia y atención dental especializada con trato cercano y personalizado.",
+    "primaryButton": "Agendar una cita",
+    "secondaryButton": "Escribir por WhatsApp"
+  },
+  "about": {
+    "title": "Experiencia, preparación y atención cercana",
+    "paragraph1": "Somos una empresa familiar dedicada al cuidado de la salud bucal desde hace más de 25 años. Nuestro compromiso es ofrecer diagnósticos claros, tratamientos de calidad y una experiencia cómoda para cada paciente.",
+    "paragraph2": "Contamos con especialistas egresados de universidades reconocidas, lo que nos permite brindar atención profesional en prótesis dental, implantes, ortodoncia y odontología integral.",
+    "highlights": [
+      "Tratamientos personalizados para cada paciente",
+      "Especialistas con formación universitaria reconocida",
+      "Ambiente cálido, profesional y familiar"
+    ]
+  },
+  "treatments": [
+    {
+      "name": "Implantes dentales",
+      "description": "Reemplazo seguro y funcional de piezas dentales para recuperar tu sonrisa.",
+      "icon": "◉"
+    },
+    {
+      "name": "Prótesis dental",
+      "description": "Opciones fijas y removibles diseñadas para mejorar función y estética.",
+      "icon": "⌁"
+    },
+    {
+      "name": "Ortodoncia",
+      "description": "Corrección de la posición dental con planes adaptados a cada paciente.",
+      "icon": "⌒"
+    },
+    {
+      "name": "Estética dental",
+      "description": "Tratamientos que mejoran la apariencia y armonía natural de tu sonrisa.",
+      "icon": "✦"
+    },
+    {
+      "name": "Odontología general",
+      "description": "Prevención, diagnóstico y tratamiento para conservar una boca sana.",
+      "icon": "◎"
+    },
+    {
+      "name": "Limpieza y prevención",
+      "description": "Control periódico para prevenir caries, inflamación y enfermedad periodontal.",
+      "icon": "♧"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. José Antonio Lau Becerril",
+      "specialty": "Prótesis dental e implantes",
+      "image": "/img/doctor-male.svg",
+      "credentials": [
+        "Cirujano Dentista · UNAM",
+        "Cédula profesional 4508361",
+        "Especialista en Prótesis Dental e Implantes · UNAM",
+        "Cédula de especialidad 5721373"
+      ]
+    },
+    {
+      "name": "Dra. Laura Susana López Martín",
+      "specialty": "Ortodoncia",
+      "image": "/img/doctor-female.svg",
+      "credentials": [
+        "Médico Estomatólogo · UAA",
+        "Cédula profesional 4895698",
+        "Especialista en Ortodoncia",
+        "Cédula de especialidad 718709"
+      ]
+    }
+  ],
+  "contact": {
+    "phoneDisplay": "(612) 122 7895",
+    "phoneInternational": "+526121227895",
+    "whatsappNumber": "526121227895",
+    "address": "Madero 685 norte, altos, Colonia Centro, C.P. 23000, La Paz, B.C.S.",
+    "hours": "Lunes a viernes: 8:00 a.m.–2:00 p.m. y 4:00 p.m.–8:00 p.m. · Sábado: 8:00 a.m.–2:00 p.m.",
+    "mapUrl": "https://maps.app.goo.gl/6TARzaB3BJEB4c5G7",
+    "defaultWhatsappMessage": "Hola, me gustaría agendar una cita en Lau Dental."
+  }
+}
