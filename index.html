@@ -1,170 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lau Dental: clínica dental familiar con más de 25 años de experiencia en prótesis, implantes, ortodoncia y atención integral." />
-  <meta name="theme-color" content="#0d2a4a" />
-  <title>Lau Dental | Cuidamos tu sonrisa</title>
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lau Dental | Clínica dental en La Paz, BCS</title>
+  <meta name="description" content="Lau Dental: rehabilitación bucal e implantes, ortodoncia, ortopedia maxilar, restauraciones estéticas, limpiezas, blanqueamientos y cirugía oral en La Paz, BCS.">
+  <meta name="theme-color" content="#092d56">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Lau Dental","url":"https://laudental.co","telephone":"+52 612 122 7895","address":{"@type":"PostalAddress","streetAddress":"Madero 685 norte, altos, Colonia Centro","postalCode":"23000","addressLocality":"La Paz","addressRegion":"Baja California Sur","addressCountry":"MX"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}]}</script>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <header class="site-header" id="inicio">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Lau Dental, inicio">
-        <img src="img/logo-laudental.webp" alt="Lau Dental" width="176" height="52" />
-      </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
-        <a href="#nosotros">Nosotros</a>
-        <a href="#tratamientos">Tratamientos</a>
-        <a href="#especialistas">Especialistas</a>
-        <a href="#contacto">Contacto</a>
-        <a class="btn btn-sm btn-primary" href="#contacto">Agendar cita</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenido">
-    <section class="hero">
-      <div class="hero-shape hero-shape-one"></div>
-      <div class="hero-shape hero-shape-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow" data-cms="hero.eyebrow">Clínica dental familiar</span>
-          <h1 data-cms="hero.title">Más de 25 años cuidando la sonrisa de tu familia</h1>
-          <p data-cms="hero.text">Atención dental especializada, cercana y personalizada para que sonrías con confianza en cada etapa de tu vida.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacto">Agendar una cita</a>
-            <a class="btn btn-secondary js-whatsapp" href="#contacto">Escribir por WhatsApp</a>
-          </div>
-          <div class="trust-row" aria-label="Beneficios principales">
-            <div><strong>25+</strong><span>Años de experiencia</span></div>
-            <div><strong>2</strong><span>Especialistas certificados</span></div>
-            <div><strong>100%</strong><span>Atención personalizada</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal delay-1">
-          <div class="hero-card">
-            <img src="img/fachada-laudental.webp" alt="Fachada de la clínica Lau Dental en La Paz, Baja California Sur" />
-            <div class="floating-badge badge-one">
-              <span class="badge-icon">✓</span>
-              <span><strong>Experiencia</strong><small>Atención profesional</small></span>
-            </div>
-            <div class="floating-badge badge-two">
-              <span class="badge-icon">♡</span>
-              <span><strong>Confianza</strong><small>Trato humano y cercano</small></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft-bg" id="nosotros">
-      <div class="container split-grid">
-        <div class="image-panel reveal">
-          <img src="img/fachada-laudental.webp" alt="Fachada del consultorio Lau Dental" loading="lazy" />
-          <div class="experience-card"><strong>25+</strong><span>años cuidando sonrisas</span></div>
-        </div>
-        <div class="section-copy reveal delay-1">
-          <span class="eyebrow">Nosotros</span>
-          <h2 data-cms="about.title">Experiencia, preparación y atención cercana</h2>
-          <p data-cms="about.paragraph1">Somos una empresa familiar dedicada al cuidado de la salud bucal desde hace más de 25 años. Nuestro compromiso es ofrecer diagnósticos claros, tratamientos de calidad y una experiencia cómoda para cada paciente.</p>
-          <p data-cms="about.paragraph2">Contamos con especialistas egresados de universidades reconocidas, lo que nos permite brindar atención profesional en prótesis dental, implantes, ortodoncia y odontología integral.</p>
-          <ul class="check-list" id="about-highlights"></ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tratamientos">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Tratamientos</span>
-          <h2>Atención integral para tu salud bucal</h2>
-          <p>Soluciones dentales para recuperar la función, estética y bienestar de tu sonrisa.</p>
-        </div>
-        <div class="services-grid" id="services-grid"></div>
-      </div>
-    </section>
-
-    <section class="section navy-section" id="especialistas">
-      <div class="container">
-        <div class="section-heading light reveal">
-          <span class="eyebrow">Especialistas</span>
-          <h2>Tu sonrisa en manos profesionales</h2>
-          <p>Formación, experiencia y atención humana en cada consulta.</p>
-        </div>
-        <div class="doctors-grid" id="doctors-grid"></div>
-      </div>
-    </section>
-
-    <section class="section why-section">
-      <div class="container">
-        <div class="section-heading reveal"><span class="eyebrow">¿Por qué elegirnos?</span><h2>Una atención pensada para ti</h2></div>
-        <div class="why-grid">
-          <div class="why-item reveal"><span>01</span><h3>Experiencia comprobada</h3><p>Más de dos décadas atendiendo a familias y construyendo relaciones de confianza.</p></div>
-          <div class="why-item reveal delay-1"><span>02</span><h3>Atención personalizada</h3><p>Escuchamos tus necesidades y explicamos cada alternativa de tratamiento.</p></div>
-          <div class="why-item reveal delay-2"><span>03</span><h3>Enfoque integral</h3><p>Prevenimos, diagnosticamos y tratamos buscando resultados funcionales y estéticos.</p></div>
-          <div class="why-item reveal"><span>04</span><h3>Ambiente familiar</h3><p>Queremos que cada visita sea cómoda, tranquila y cercana.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section soft-bg" id="contacto">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <span class="eyebrow">Contacto</span>
-          <h2>Da el primer paso hacia una sonrisa más sana</h2>
-          <p>Agenda tu valoración. Con gusto resolveremos tus dudas y te ayudaremos a encontrar el tratamiento adecuado.</p>
-          <div class="contact-list">
-            <a href="tel:+526121227895"><span>☎</span><div><small>Teléfono</small><strong data-phone>(612) 122 7895</strong></div></a>
-            <a class="js-whatsapp" href="#"><span>◔</span><div><small>WhatsApp</small><strong data-whatsapp-label>(612) 122 7895</strong></div></a>
-            <div><span>⌖</span><div><small>Ubicación</small><strong data-address>Madero 685 norte, altos, Col. Centro, La Paz, B.C.S.</strong></div></div>
-            <div><span>◷</span><div><small>Horario</small><strong data-hours>Lun–Vie 8:00–14:00 y 16:00–20:00 · Sáb 8:00–14:00</strong></div></div>
-          </div>
-        </div>
-        <form class="contact-card reveal delay-1" id="appointment-form">
-          <h3>Solicita una cita</h3>
-          <label>Nombre completo<input type="text" name="name" required autocomplete="name" /></label>
-          <label>Teléfono<input type="tel" name="phone" required autocomplete="tel" /></label>
-          <label>Tratamiento de interés<select name="service"><option>Valoración general</option><option>Implantes dentales</option><option>Prótesis dental</option><option>Ortodoncia</option><option>Estética dental</option><option>Limpieza dental</option></select></label>
-          <label>Mensaje<textarea name="message" rows="4" placeholder="Cuéntanos brevemente cómo podemos ayudarte"></textarea></label>
-          <button class="btn btn-primary btn-block" type="submit">Enviar por WhatsApp</button>
-          <small class="form-note">Al enviar, se abrirá WhatsApp con tu solicitud.</small>
-        </form>
-      </div>
-    </section>
-
-    <section class="map-section" aria-label="Ubicación">
-      <div class="map-placeholder">
-        <div><span>⌖</span><h3>Visítanos</h3><p data-address>Madero 685 norte, altos, Colonia Centro, La Paz, B.C.S.</p><a class="btn btn-secondary" data-map-link href="https://maps.google.com" target="_blank" rel="noopener">Abrir en Google Maps</a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><img src="img/logo-laudental.webp" alt="Lau Dental" width="176" height="52" /><p>Más de 25 años cuidando la salud bucal de tu familia.</p></div>
-      <div><h4>Navegación</h4><a href="#nosotros">Nosotros</a><a href="#tratamientos">Tratamientos</a><a href="#especialistas">Especialistas</a><a href="#contacto">Contacto</a></div>
-      <div><h4>Legal</h4><a href="aviso-de-privacidad.html">Aviso de privacidad</a><a href="mailto:contacto@laudental.co">contacto@laudental.co</a></div>
-    </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> Lau Dental. Todos los derechos reservados.</span><a href="#inicio">Volver arriba ↑</a></div>
-  </footer>
-
-  <div class="floating-actions" aria-label="Acciones rápidas">
-    <a class="float-btn whatsapp js-whatsapp" href="#" aria-label="Enviar WhatsApp"><span>◔</span><b>WhatsApp</b></a>
-    <a class="float-btn appointment" href="#contacto" aria-label="Agendar cita"><span>＋</span><b>Agendar cita</b></a>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="topbar"><div class="container topbar-inner"><span>📍 La Paz, B.C.S.</span><a href="tel:+526121227895">☎ (612) 122 7895</a><span>🕒 Lun–Vie 8–2 y 4–8 · Sáb 8–2</span></div></div>
+<header class="header" id="inicio">
+  <div class="container nav-row">
+    <a href="#inicio" class="brand" aria-label="Lau Dental, inicio"><img src="assets/images/logo-laudental-horizontal.png" alt="Lau Dental"></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" class="nav" aria-label="Navegación principal">
+      <a href="#nosotros">Nosotros</a><a href="#tratamientos">Tratamientos</a><a href="#laboratorio">Laboratorio dental</a><a href="#especialistas">Especialistas</a><a href="#visitanos">Contacto</a>
+      <a class="button button-primary button-small" href="#cita">Agendar cita</a>
+    </nav>
   </div>
-
-  <script src="js/content.js"></script>
+</header>
+<main id="contenido">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Clínica dental familiar en La Paz</span>
+      <h1>Tu sonrisa merece la mejor atención</h1>
+      <p>Más de 25 años ofreciendo rehabilitación bucal, implantes, ortodoncia y atención especializada con un trato humano y personalizado.</p>
+      <div class="actions"><a class="button button-primary" href="#cita">Agendar una cita</a><a class="button button-outline js-whatsapp" href="#">WhatsApp</a></div>
+      <div class="metrics"><div><strong>25+</strong><span>años de experiencia</span></div><div><strong>2</strong><span>especialistas</span></div><div><strong>1</strong><span>laboratorio propio</span></div></div>
+    </div>
+    <div class="hero-image reveal delay"><img src="assets/images/fachada-laudental.webp" alt="Fachada de Lau Dental en La Paz, Baja California Sur"><div class="photo-label"><strong>Consultorio Lau Dental</strong><span>Madero 685 norte, altos</span></div></div>
+  </div>
+</section>
+<section class="section pale" id="nosotros"><div class="container split">
+  <div class="clinic-image reveal"><img src="assets/images/fachada-laudental.webp" alt="Entrada del consultorio Lau Dental" loading="lazy"><div class="experience"><strong>25+</strong><span>años cuidando sonrisas</span></div></div>
+  <div class="copy reveal delay"><span class="eyebrow">Nosotros</span><h2>Experiencia, preparación y atención cercana</h2><p>Somos una empresa familiar dedicada al cuidado de la salud bucal desde hace más de 25 años. Nuestro compromiso es brindar diagnósticos claros, tratamientos de calidad y una experiencia cómoda para cada paciente.</p><p>Contamos con especialistas egresados de universidades reconocidas, con atención profesional en rehabilitación bucal, implantes, ortodoncia y odontología integral.</p><ul class="checks"><li>Atención personalizada</li><li>Especialistas con formación universitaria</li><li>Tratamientos funcionales y estéticos</li><li>Laboratorio dental propio</li></ul></div>
+</div></section>
+<section class="section" id="tratamientos"><div class="container"><div class="heading reveal"><span class="eyebrow">Tratamientos</span><h2>Soluciones para recuperar la salud y confianza de tu sonrisa</h2></div><div class="cards treatments">
+<article class="card reveal"><span class="icon">🦷</span><h3>Rehabilitación bucal e implantes</h3><p>Recuperamos función, estética y comodidad mediante planes personalizados.</p></article>
+<article class="card reveal"><span class="icon">😁</span><h3>Ortodoncia</h3><p>Alineación dental para niños, adolescentes y adultos.</p></article>
+<article class="card reveal"><span class="icon">◫</span><h3>Ortopedia maxilar</h3><p>Guiamos el desarrollo adecuado de los maxilares durante el crecimiento.</p></article>
+<article class="card reveal"><span class="icon">✨</span><h3>Restauraciones estéticas</h3><p>Resinas del color natural para restaurar dientes dañados.</p></article>
+<article class="card reveal"><span class="icon">✦</span><h3>Limpiezas y blanqueamientos</h3><p>Prevención, higiene profesional y una sonrisa más luminosa.</p></article>
+<article class="card reveal"><span class="icon">⚕</span><h3>Extracciones y cirugía oral</h3><p>Procedimientos realizados con técnicas seguras y atención cuidadosa.</p></article>
+</div></div></section>
+<section class="section lab" id="laboratorio"><div class="container lab-grid"><div class="reveal"><span class="eyebrow light">Nuestro diferenciador</span><h2>Laboratorio dental propio</h2><p>Contamos con nuestro propio laboratorio dental, lo que nos permite ofrecer trabajos personalizados con mayor precisión, excelente calidad y tiempos de entrega más rápidos.</p><a class="button button-light js-whatsapp" href="#">Solicitar información</a></div><div class="lab-benefits reveal delay"><div><strong>✓</strong><span>Mayor control de calidad</span></div><div><strong>✓</strong><span>Entregas más rápidas</span></div><div><strong>✓</strong><span>Trabajos personalizados</span></div><div><strong>✓</strong><span>Comunicación directa</span></div></div></div></section>
+<section class="section" id="especialistas"><div class="container"><div class="heading reveal"><span class="eyebrow">Especialistas</span><h2>Tu sonrisa en manos profesionales</h2></div><div class="doctor-grid">
+<article class="doctor reveal"><div class="doctor-mark">JL</div><div><h3>Dr. José Antonio Lau Becerril</h3><p>Cirujano dentista · UNAM</p><p>Especialista en prótesis dental e implantes · UNAM</p><small>Cédulas profesionales: 4508361 · 5721373</small></div></article>
+<article class="doctor reveal delay"><div class="doctor-mark">LL</div><div><h3>Dra. Laura Susana López Martín</h3><p>Médico estomatólogo · UAA</p><p>Especialista en ortodoncia</p><small>Cédula profesional: 4895698 · Especialidad: 718709</small></div></article>
+</div></div></section>
+<section class="section pale"><div class="container"><div class="heading reveal"><span class="eyebrow">¿Por qué Lau Dental?</span><h2>Una atención pensada para ti</h2></div><div class="why-grid"><div><b>01</b><h3>Experiencia comprobada</h3><p>Más de dos décadas de atención a familias.</p></div><div><b>02</b><h3>Especialistas certificados</h3><p>Preparación profesional y atención responsable.</p></div><div><b>03</b><h3>Laboratorio propio</h3><p>Calidad, precisión y rapidez en los trabajos.</p></div><div><b>04</b><h3>Trato personalizado</h3><p>Escuchamos tus necesidades y explicamos tus opciones.</p></div></div></div></section>
+<section class="section" id="cita"><div class="container contact-grid"><div class="reveal"><span class="eyebrow">Agenda tu cita</span><h2>Da el primer paso hacia una sonrisa más sana</h2><p>Envíanos tus datos y se abrirá WhatsApp con tu solicitud lista para enviar.</p><div class="contact-lines"><a href="tel:+526121227895">☎ <span><small>Teléfono</small><strong>(612) 122 7895</strong></span></a><a class="js-whatsapp" href="#">💬 <span><small>WhatsApp</small><strong>+52 612 176 8359</strong></span></a></div></div><form class="form reveal delay" id="appointment-form"><label>Nombre<input name="name" required autocomplete="name"></label><label>Teléfono<input name="phone" required autocomplete="tel"></label><label>Tratamiento<select name="service"><option>Valoración general</option><option>Rehabilitación bucal e implantes</option><option>Ortodoncia</option><option>Ortopedia maxilar</option><option>Restauraciones estéticas</option><option>Limpiezas y blanqueamientos</option><option>Extracciones y cirugía oral</option></select></label><label>Mensaje<textarea name="message" rows="4"></textarea></label><button class="button button-primary" type="submit">Enviar por WhatsApp</button></form></div></section>
+<section class="section visit pale" id="visitanos"><div class="container visit-grid"><div class="reveal"><span class="eyebrow">Visítanos</span><h2>Estamos en el centro de La Paz</h2><address>Madero 685 norte, altos<br>Colonia Centro, C.P. 23000<br>La Paz, Baja California Sur</address><h3>Horario</h3><p><strong>Lunes a viernes:</strong> 8:00 a.m. a 2:00 p.m. y 4:00 p.m. a 8:00 p.m.<br><strong>Sábado:</strong> 8:00 a.m. a 2:00 p.m.</p><div class="actions"><a class="button button-primary" href="https://maps.app.goo.gl/6TARzaB3BJEB4c5G7" target="_blank" rel="noopener">Cómo llegar</a><a class="button button-outline" href="tel:+526121227895">Llamar</a></div></div><a class="map-card reveal delay" href="https://maps.app.goo.gl/6TARzaB3BJEB4c5G7" target="_blank" rel="noopener"><img src="assets/images/mapa-laudental.webp" alt="Mapa de ubicación de Lau Dental en La Paz" loading="lazy"><span>Abrir ubicación en Google Maps ↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><img src="assets/images/logo-laudental-horizontal.png" alt="Lau Dental"><p>Más de 25 años cuidando la salud bucal de tu familia.</p></div><div><h3>Contacto</h3><a href="tel:+526121227895">(612) 122 7895</a><a class="js-whatsapp" href="#">WhatsApp: +52 612 176 8359</a><a href="https://maps.app.goo.gl/6TARzaB3BJEB4c5G7" target="_blank" rel="noopener">Madero 685 norte, altos</a></div><div><h3>Horario</h3><p>Lun–Vie: 8–2 y 4–8<br>Sábado: 8–2</p><a href="https://www.facebook.com/profile.php?id=100059037774252" target="_blank" rel="noopener">Facebook ↗</a><a href="aviso-de-privacidad.html">Aviso de privacidad</a></div></div><div class="container copyright">© <span id="year"></span> Lau Dental. Todos los derechos reservados.</div></footer>
+<div class="floating"><a class="whatsapp js-whatsapp" href="#">WhatsApp</a><a class="appointment" href="#cita">Agendar cita</a></div>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
