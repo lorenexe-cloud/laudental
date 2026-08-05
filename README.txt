@@ -1,13 +1,14 @@
-LAU DENTAL - SITIO DE PRODUCCIÓN
+LAU DENTAL - VERSIÓN AJUSTADA
 
-Para publicar:
-1. Descomprime este ZIP.
-2. Sube el CONTENIDO de la carpeta a la raíz del repositorio GitHub laudental.
-3. Confirma que index.html esté en la raíz.
-4. Haz Commit changes.
-5. Cloudflare Pages publicará automáticamente.
+Cambios incluidos:
+- Encabezado alineado y responsive.
+- Formulario emergente de Agendar cita.
+- Envío del formulario a joseantonio_lau@hotmail.com mediante FormSubmit.
+- Resultados con únicamente Antes y Después.
+- 30 años de experiencia.
 
-Datos incluidos:
-Teléfono: (612) 122 7895
-WhatsApp: +52 612 176 8359
-Citas: joseantonio_lau@hotmail.com
+IMPORTANTE SOBRE EL FORMULARIO:
+La primera solicitud enviada mediante FormSubmit genera un correo de activación a joseantonio_lau@hotmail.com. Debe abrirse ese correo y confirmar la dirección una sola vez. Después, las solicitudes llegarán directamente. Revisar también la carpeta de correo no deseado.
+
+PUBLICACIÓN:
+Sube el contenido de esta carpeta a la raíz del repositorio laudental y confirma los cambios. Cloudflare Pages publicará la actualización automáticamente.
