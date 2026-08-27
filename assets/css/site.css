@@ -57,11 +57,15 @@
 
 .brand img{max-width:280px}}
 
-/* Language selector in the upper blue bar */
-.language-strip{background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.16)}
-.language-strip-inner{width:min(1480px,92%);min-height:30px;margin:auto;display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:13px;line-height:1;font-weight:750}
-.language-strip a,.language-strip strong{color:#fff;text-decoration:none;font-weight:750}
-.language-strip a:hover{text-decoration:underline}
-.language-strip strong{opacity:.68}
-.language-strip span{opacity:.42}
-@media(max-width:980px){.language-strip{display:block}.language-strip-inner{min-height:34px;font-size:13px}}
+
+/* Language selector integrated into the existing blue top bar */
+.lang-switch{margin-left:auto;display:flex;align-items:center;gap:9px;font-size:13px;line-height:1;font-weight:750;white-space:nowrap}
+.lang-switch a,.lang-switch strong{color:#fff;text-decoration:none;font-weight:750}
+.lang-switch a:hover{text-decoration:underline}.lang-switch strong{opacity:.72}.lang-switch span{opacity:.45}
+.language-only .topbar-inner{justify-content:flex-end}
+@media(max-width:980px){
+  .topbar{display:block}
+  .topbar-inner{min-height:36px;justify-content:flex-end;width:min(1480px,92%)}
+  .topbar-inner>.topitem,.topbar-inner>.facebook-icon{display:none}
+  .lang-switch{margin-left:auto;font-size:13px}
+}
