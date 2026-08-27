@@ -49,3 +49,4 @@
   .ortho-pair figure{max-width:260px;width:80%}
   .ortho-pair img{max-height:350px}
 }
+.single-before{grid-template-columns:minmax(0,420px)!important;justify-content:center}.case-photo-note{text-align:center;color:var(--muted);font-size:14px;margin:14px auto 0;max-width:520px}
