@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laudental.co/sitemap.xml

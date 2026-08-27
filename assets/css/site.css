@@ -50,3 +50,5 @@
   .ortho-pair img{max-height:350px}
 }
 .single-before{grid-template-columns:minmax(0,420px)!important;justify-content:center}.case-photo-note{text-align:center;color:var(--muted);font-size:14px;margin:14px auto 0;max-width:520px}
+
+.aesthetic-case-divider{text-align:center;padding:30px 0 4px}.aesthetic-case-divider h2{font-family:Georgia,'Times New Roman',serif;color:var(--navy2);font-size:clamp(30px,3.5vw,46px);margin:6px 0 12px}.aesthetic-case-divider p{max-width:780px;margin:0 auto;color:var(--muted);font-size:17px}
