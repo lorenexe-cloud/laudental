@@ -55,7 +55,13 @@
 
 
 
-/* Language selector: positioned independently so it never changes logo size */
-.lang-switch{position:absolute;top:10px;right:0;display:flex;align-items:center;gap:8px;font-size:.82rem;font-weight:750;white-space:nowrap;z-index:2}.lang-switch a,.lang-switch span{text-decoration:none}.lang-switch a{color:#0b3655}.lang-switch a:hover{text-decoration:underline}.lang-switch .active{color:#587082}.lang-switch .lang-separator{color:#a9bbc5;font-weight:400}.lang-switch .active,.lang-switch a{padding:0;background:none;border:0;border-radius:0;letter-spacing:0}
-@media(max-width:980px){.lang-switch{top:7px;right:52px;font-size:.76rem;gap:6px}}
-@media(max-width:520px){.lang-switch{top:5px;right:44px;font-size:.7rem}.brand img{max-width:280px}}
+.brand img{max-width:280px}}
+
+/* Language selector in the upper blue bar */
+.language-strip{background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.16)}
+.language-strip-inner{width:min(1480px,92%);min-height:30px;margin:auto;display:flex;align-items:center;justify-content:flex-end;gap:9px;font-size:13px;line-height:1;font-weight:750}
+.language-strip a,.language-strip strong{color:#fff;text-decoration:none;font-weight:750}
+.language-strip a:hover{text-decoration:underline}
+.language-strip strong{opacity:.68}
+.language-strip span{opacity:.42}
+@media(max-width:980px){.language-strip{display:block}.language-strip-inner{min-height:34px;font-size:13px}}
