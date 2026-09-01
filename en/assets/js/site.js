@@ -1,3 +1,22 @@
 window.dataLayer=window.dataLayer||[];function trackEvent(name,params={}){window.dataLayer.push({event:name,...params});if(typeof window.gtag==='function'){window.gtag('event',name,params);}}
 const menuButton=document.querySelector('.menu');const nav=document.querySelector('.header nav');menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');}));const modal=document.querySelector('#appointment-modal');const openButtons=document.querySelectorAll('.js-open-appointment');const closeButtons=document.querySelectorAll('.js-close-appointment');function openModal(){trackEvent('abrir_formulario_cita',{metodo:'sitio_web'});modal?.classList.add('open');modal?.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');modal?.querySelector('input:not([type="hidden"])')?.focus();}function closeModal(){modal?.classList.remove('open');modal?.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');}openButtons.forEach(b=>b.addEventListener('click',openModal));closeButtons.forEach(b=>b.addEventListener('click',closeModal));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});const params=new URLSearchParams(location.search);if(params.get('cita')==='abrir'){openModal();history.replaceState({},'',location.pathname+location.hash);}if(params.get('cita')==='enviada'){trackEvent('solicitud_cita',{metodo:'formulario_web'});const toast=document.createElement('div');toast.className='success-toast';toast.textContent='We received your request. We will contact you to confirm your appointment.';document.body.appendChild(toast);history.replaceState({},'',location.pathname+location.hash);setTimeout(()=>toast.remove(),7000);}
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>trackEvent('click_whatsapp',{ubicacion:location.pathname})));
+// GA4 conversion tracking: no personal form data is sent.
+(function(){
+  function eventParams(extra){return Object.assign({page_path:window.location.pathname},extra||{});}
+  function labelOf(el){return (el.getAttribute('aria-label')||el.textContent||'').trim().replace(/\s+/g,' ').slice(0,80);}
+  document.addEventListener('click',function(e){
+    const link=e.target.closest('a'); if(!link) return;
+    const href=link.getAttribute('href')||''; const label=labelOf(link);
+    if(/(?:wa\.me|whatsapp\.com)/i.test(href)){trackEvent('whatsapp_click',eventParams({link_text:label}));}
+    else if(/^tel:/i.test(href)){trackEvent('phone_click',eventParams({link_text:label}));}
+    else if(/(?:maps\.app\.goo\.gl|google\.[^/]+\/maps|google\.com\/maps)/i.test(href)){trackEvent('maps_click',eventParams({link_text:label}));}
+  },true);
+  document.addEventListener('click',function(e){
+    const el=e.target.closest('.js-open-appointment, a[href*="cita=abrir"]'); if(!el) return;
+    trackEvent('appointment_click',eventParams({button_text:labelOf(el)}));
+  },true);
+  const form=document.querySelector('#appointment-form');
+  form?.addEventListener('submit',function(){trackEvent('appointment_form_submit',eventParams({form_name:'appointment'}));});
+})();
+
