@@ -81,3 +81,30 @@
 .doctor-info{padding:30px;align-self:center}.doctor-info h3{color:var(--navy);font-size:24px;line-height:1.2;margin:0 0 18px}.doctor-info p{margin:10px 0;color:var(--text)}
 @media(max-width:980px){.about-with-photo{grid-template-columns:1fr}.about-photo{max-width:760px;margin-inline:auto}.doctor-card{grid-template-columns:minmax(220px,.8fr) 1.2fr}}
 @media(max-width:600px){.about-photo figcaption{padding:36px 20px 18px}.about-photo figcaption strong{font-size:18px}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:auto;min-height:0;aspect-ratio:4/5;object-position:center 20%}.doctor-info{padding:24px}}
+
+/* v8: fotografías originales de especialistas sin recorte */
+.doctor-photo{
+  width:100%;
+  height:auto;
+  min-height:0;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:center center;
+}
+@media(max-width:600px){
+  .doctor-photo{
+    width:100%;
+    height:auto;
+    min-height:0;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    object-position:center center;
+  }
+}
+
+/* v9 - Presentación fotográfica profesional sin alterar ni recortar las fotos originales */
+.doctor-card{background:#fff;box-shadow:0 18px 44px rgba(11,54,85,.12);border:1px solid #e3edf0}
+.doctor-photo{display:block;width:100%;height:auto!important;min-height:0!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;background:#f4f7f8}
+.about-photo img{filter:none}
+.doctor-photo{filter:none}
+@media(max-width:600px){.doctor-photo{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important}}
